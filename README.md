@@ -1,7 +1,11 @@
 # redegal_test
 Prueba para ingeniero de datos Jr de Redegal
 
-El para una correcta lectura de los archivos, el programa debe ser ejecutado en el mismo directorio en el que se encuentran los archivos de datos.
+Los ficheros de datos que se deseen emplear deben ser descargados de la siguiente pagina:
+
+https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+Para una correcta lectura de los archivos, el programa debe ser ejecutado en el mismo directorio en el que se encuentran los archivos de datos.
 
 Cargamos pandas para mayor facilidad en el tratamiento de datos.
 
