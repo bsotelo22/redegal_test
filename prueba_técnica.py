@@ -31,5 +31,5 @@ df_grouped = df_grouped.nlargest(10, 'trips').reset_index() # cogemos los 10 val
 
 results = pd.merge(df_grouped,df_lookup, left_on='DOLocationID', right_on='LocationID') # hacemos un cruce entre las dos tablas. El cruce se realiza de tal modo que solo coge la intersección de los valores que coinciden en las dos tablas.
 results = results[['trips','Borough', 'Zone']] # reordenamos los resultados y posteriormente les cambiamos el nombre a las columnas.
-results.rename(columns={'Borough':'end_borough', 'Zone': 'end_zone'}, inplace=True)
+results.rename(columns={'Borough':'end_borough', 'Zone': 'end_zone'}, inplace=True) # indicamos inplace = True para que los cambios se sobreescriban sobre el propio dataframe, evitando asi que se cree una copia del mismo.
 print(results)
